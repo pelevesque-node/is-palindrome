@@ -38,6 +38,7 @@ function compareGroups (str, groupBy) {
 module.exports = (str, groupBy = 1, pivotMustBePalindromic = false) => {
   if (str.length < groupBy) return false
   if (str.length === groupBy) return true
+  if (groupBy > 1 && str.length < groupBy * 2) return false
   const pivot = getPivot(str, groupBy)
   if (pivot && !compareGroups(pivot, 1) && pivotMustBePalindromic) return false
   return compareGroups(str, groupBy)

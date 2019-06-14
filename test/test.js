@@ -20,6 +20,14 @@ describe('#isPalindrome()', () => {
       const expected = false
       expect(result).to.equal(expected)
     })
+
+    it('should return false for a string with a tail (groupBy > 1 && str shorter than groupBy * 2)', () => {
+      const str = '12345'
+      const groupBy = 3
+      const result = isPalindrome(str, groupBy)
+      const expected = false
+      expect(result).to.equal(expected)
+    })
   })
 
   describe('#tests strings with a length equal to groupBy', () => {
