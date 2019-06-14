@@ -60,6 +60,13 @@ describe('#isPalindrome()', () => {
       const expected = true
       expect(result).to.equal(expected)
     })
+
+    it('should return true for a string with all the same characters', () => {
+      const str = 'aaaaa'
+      const result = isPalindrome(str)
+      const expected = true
+      expect(result).to.equal(expected)
+    })
   })
 
   describe('#tests for groupBy = 2 without a pivot', () => {
