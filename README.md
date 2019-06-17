@@ -26,6 +26,16 @@ https://www.npmjs.com/package/@pelevesque/is-palindrome
 
 ## Usage
 
+### parameters
+
+```js
+str                    (required)
+groupBy                (optional) default = 1
+pivotMustBePalindromic (optional) default = false
+```
+
+### examples
+
 ```js
 const isPalindrome = require('@pelevesque/is-palindrome')
 ```
