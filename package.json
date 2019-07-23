@@ -1,6 +1,6 @@
 {
   "name": "@pelevesque/is-palindrome",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Checks if a string is a palindrome with a grouping feature not seen in other palindrome checkers.",
   "main": "index.js",
   "engines": {
